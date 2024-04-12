@@ -104,7 +104,7 @@ def magiCuadrado (n):
                         contador += backtrack(i+1, 0)
 
                         cuadrado [i][j] = 0
-            return 0
+            
         elif i == n-1: ## cuando estoy en el ultimo lugar de la matriz
                 for h in range (1 , n*n + 1):
                     if sumaFila(cuadrado,i) + h == numeroMagico and no_esta_en_matriz(h, cuadrado)and sumaColumna(cuadrado, j) + h == numeroMagico :
